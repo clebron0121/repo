@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AdhocTest">
+
+<listeners>
+<listener class-name="Listeners.listenTo"></listener>
+
+</listeners>
+
+	<test name="RegressionC">
+		<parameter name="url" value="https://amazon.com"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testing1.NegTest"> </class>
+		<!--  	 <class name="com.amazon.prime.secondTesteexample"> </class> -->
+		</classes>
+
+	 </test>
+
+	
+	
+</suite>
